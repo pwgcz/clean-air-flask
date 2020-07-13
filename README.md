@@ -10,7 +10,7 @@ Purpose of this web-app is to store data from government api http://www.gios.gov
 ![Screenshot from 2020-07-07 10-25-24](https://user-images.githubusercontent.com/62465226/86747880-5b446080-c03c-11ea-8a10-73d8288a5885.png)
 ## Installing locally(only for linux/unix user)
 ### Back-end
-1. Create virtual virtual env using command- ```python3 -m venv venv``` ``` then run python script ```initial_load.py``` to populate database with  data, script ```periodic_load_measurement.py``` when run will populate database every hour with current data. To start back-end go to project directory and run command  -```yarn start-api```
+1. Create virtual virtual env using command- ```python3 -m venv venv```
 2. Activate virtual env using command- ```. env/bin/activate``` 
 3. Install dependency from file requirements-dev.txt using command- ```pip install -r requirements-dev.txt``` 
 4. Run migration file using command- ```flask db upgrade``` 
