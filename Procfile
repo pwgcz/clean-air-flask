@@ -1,1 +1,1 @@
-web:cd api && venv/bin/gunicorn api:app
+web: gunicorn api:app
