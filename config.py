@@ -20,7 +20,7 @@ class ProductionConfig(Config):
     DEBUG = config('DEBUG', default=False, cast=bool)
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
     SESSION_COOKIE_DOMAIN = True
-    SERVER_NAME = 'https.clean-air-poland.herokuapp.com'
+    SERVER_NAME = 'clean-air-poland.herokuapp.com'
 
 
 class DevelopmentConfig(Config):
