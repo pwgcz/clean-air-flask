@@ -5,4 +5,4 @@ from . import send_static
 
 @send_static.route('/')
 def index():
-    return 'okok'
+    return current_app.send_static_file('index.html')
