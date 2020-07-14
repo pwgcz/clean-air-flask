@@ -9,7 +9,7 @@ class Config:
     CSRF_ENABLED = True
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    # postgresql: // username: password @ hostname / database
+
     @staticmethod
     def init_app(app):
         pass
@@ -19,7 +19,8 @@ class ProductionConfig(Config):
     SECRET_KEY = config('SECRET_KEY')
     DEBUG = config('DEBUG', default=False, cast=bool)
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
-    SERVER_NAME = 'https://clean-air-poland.herokuapp.com'
+    SESSION_COOKIE_DOMAIN = True
+    SERVER_NAME = 'https.clean-air-poland.herokuapp.com'
 
 
 class DevelopmentConfig(Config):
