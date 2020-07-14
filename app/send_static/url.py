@@ -1,6 +1,7 @@
+from flask import current_app
 from . import send_static
 
 
 @send_static.route('/')
 def index():
-    return send_static.send_static_file('index.html')
+    return current_app.send_static_file('index.html')
