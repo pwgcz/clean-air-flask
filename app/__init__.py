@@ -21,10 +21,10 @@ def create_app():
     ma.init_app(app)
     migrate.init_app(app)
 
-    from .pollination_api import pollination_api as pollination_api_blueprint
-    app.register_blueprint(pollination_api_blueprint)
-
     from .send_static import send_static as send_static_blueprint
     app.register_blueprint(send_static_blueprint)
+
+    from .pollination_api import pollination_api as pollination_api_blueprint
+    app.register_blueprint(pollination_api_blueprint, url_prexif="/api")
 
     return app
