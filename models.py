@@ -81,7 +81,7 @@ class MeasuringStandsSchema(ma.SQLAlchemyAutoSchema):
 class MeasuringData(db.Model):
     __tablename__ = "data"
     id = db.Column(db.Integer, primary_key=True)
-    date = db.Column(db.DateTime, unique=True)
+    date = db.Column(db.DateTime)
     value = db.Column(db.Float)
     sensor_id = db.Column(db.Integer, db.ForeignKey("sensors.id"))
     sensor = db.relationship("MeasuringStands", backref="data")
