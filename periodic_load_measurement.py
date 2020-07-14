@@ -7,8 +7,8 @@ import time
 
 from models import MeasuringData, MeasuringStands
 
-basedir = os.path.abspath(os.path.dirname(__file__))
-engine = create_engine("sqlite:///" + os.path.join(basedir, "data.sqlite"), echo=True)
+
+engine = create_engine(os.environ.get('DATABASE_URL'), echo=True)
 
 Session = sessionmaker(bind=engine)
 session = Session()
