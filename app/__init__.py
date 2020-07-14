@@ -22,7 +22,7 @@ def create_app():
     migrate.init_app(app)
 
     from .send_static import send_static as send_static_blueprint
-    app.register_blueprint(send_static_blueprint)
+    app.register_blueprint(send_static_blueprint, url_prefix='main')
 
     from .pollination_api import pollination_api as pollination_api_blueprint
     app.register_blueprint(pollination_api_blueprint)
