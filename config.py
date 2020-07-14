@@ -18,7 +18,7 @@ class Config:
 class ProductionConfig(Config):
     SECRET_KEY = config('SECRET_KEY')
     DEBUG = config('DEBUG', default=False, cast=bool)
-    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, "data.sqlite")
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
     SERVER_NAME = 'https://clean-air-poland.herokuapp.com'
 
 

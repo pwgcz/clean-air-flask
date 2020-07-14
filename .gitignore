@@ -1,5 +1,5 @@
 *.idea
-*.sqlite3
+*.sqlite
 *.pyc
 __pycache__
 npm-debug.log*
