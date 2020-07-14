@@ -25,6 +25,6 @@ def create_app():
     app.register_blueprint(pollination_api_blueprint)
 
     from .send_static import send_static as send_static_blueprint
-    app.register_blueprint(send_static_blueprint)
+    app.register_blueprint(send_static_blueprint, url_prexif="/index")
 
     return app
