@@ -23,7 +23,8 @@ def create_app():
 
     @app.route('/')
     def index():
-        return 'ok'
+        print(app.send_static_file('index.html'))
+        return'index.html'
 
     from .pollination_api import pollination_api as pollination_api_blueprint
     app.register_blueprint(pollination_api_blueprint)
