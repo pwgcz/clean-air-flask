@@ -10,7 +10,6 @@ nav {
   background: #74A57F;
   color: #e8e9e7;
 }
-
 a {
   text-decoration: none;
 }
@@ -41,7 +40,6 @@ nav a:hover{
   align-items: center;
 
 }
-
 .form-wraper{
   height: 10vh;
   width: 100%;
@@ -95,8 +93,6 @@ nav a:hover{
 
 }
 .station-card{
-
-  height: 50%;
   width: 90%;
   flex-direction: column;
   margin-top: 2rem;
@@ -105,6 +101,7 @@ nav a:hover{
   align-items: center;
   justify-content: space-around;
   padding: 3rem;
+  margin-bottom: 4rem;
 }
 .station-wraper{
   width: 100%;
@@ -115,9 +112,10 @@ nav a:hover{
   margin-left: 2rem;
 }
 .stand-card{
-   border: 1px solid black;
-   border-radius: 20px;
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .chart-wrapper{
