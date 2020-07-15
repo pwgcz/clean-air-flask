@@ -22,6 +22,8 @@ Purpose of this web-app is to store data from government api http://www.gios.gov
 1. Install dependency from package.json file using command-  ``` npm install``` 
 * Front-end is ready to use. To start frontend app use command- ```yarn start``` 
 
+## Deploying app on heroku 
+link to app: ``` https://clean-air-poland.herokuapp.com```
+
 ## WIP
-* Deploying app on Heroku
 * Make app responsive
