@@ -23,7 +23,7 @@ Purpose of this web-app is to store data from government api http://www.gios.gov
 * Front-end is ready to use. To start frontend app use command- ```yarn start``` 
 
 ## Deploying app on heroku 
-link to app: ``` https://clean-air-poland.herokuapp.com```
+link to app: https://clean-air-poland.herokuapp.com
 
 ## WIP
 * Make app responsive
