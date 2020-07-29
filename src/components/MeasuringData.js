@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import {Bar, BarChart, Tooltip, CartesianGrid, XAxis, YAxis} from 'recharts';
+import {Bar, BarChart, Tooltip, CartesianGrid, XAxis, YAxis, ResponsiveContainer} from 'recharts';
 
 export const MeasuringData = ({stand}) =>{
 
@@ -90,8 +90,8 @@ const handleErrors = (err) =>{
   }
 
   return(
-
-  <BarChart width={700} height={300} data={barData} className='chart-wrapper' margin={{
+<ResponsiveContainer width='95%' height={300}>
+  <BarChart data={barData} className='chart-wrapper' margin={{
           top: 5, right: 5, left: 5, bottom: 5,
   }}>
   <CartesianGrid stroke="#ccc" strokeDasharray="1 1" />
@@ -107,7 +107,7 @@ const handleErrors = (err) =>{
     <Bar stackId='pollution' dataKey="bad" fill="#900C3F " />
     <Bar stackId='pollution' dataKey="very_bad" fill="##581845  " />
   </BarChart>
-
+</ResponsiveContainer>
 
   )
 }
