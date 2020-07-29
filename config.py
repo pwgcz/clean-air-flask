@@ -16,14 +16,14 @@ class Config:
 
 
 class ProductionConfig(Config):
-    SECRET_KEY = config('SECRET_KEY')
-    DEBUG = config('DEBUG', default=False, cast=bool)
+    SECRET_KEY = config("SECRET_KEY")
+    DEBUG = config("DEBUG", default=False, cast=bool)
     SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, "data.sqlite")
-    SERVER_NAME = 'https://clean-air-poland.herokuapp.com'
+    SERVER_NAME = "https://clean-air-poland.herokuapp.com"
 
 
 class DevelopmentConfig(Config):
-    SECRET_KEY = 'djbavbarhvbadvb'
+    SECRET_KEY = "djbavbarhvbadvb"
     DEVELOPMENT = True
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, "data.sqlite")
