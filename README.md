@@ -37,7 +37,7 @@ I assigned the color of the bar graphs using the air quality index
 1. Install dependency from package.json file using command-  ``` npm install``` 
 * Front-end is ready to use. To start frontend app use command- ```yarn start``` 
 
-## Deploying app on heroku 
+## Deployed app on heroku 
 link to app: https://clean-air-poland.herokuapp.com 
 
 
