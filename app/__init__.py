@@ -12,7 +12,7 @@ ma = Marshmallow()
 
 
 def create_app():
-    app = Flask(__name__, static_folder='../build', static_url_path='/')
+    app = Flask(__name__, static_folder="../build", static_url_path="/")
 
     app.config.from_object(ProductionConfig)
 
@@ -21,12 +21,13 @@ def create_app():
     ma.init_app(app)
     migrate.init_app(app)
 
-    @app.route('/')
+    @app.route("/")
     def index():
 
-        return app.send_static_file('index.html')
+        return app.send_static_file("index.html")
 
     from .pollination_api import pollination_api as pollination_api_blueprint
+
     app.register_blueprint(pollination_api_blueprint)
 
     return app

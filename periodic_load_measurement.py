@@ -8,7 +8,7 @@ import time
 from models import MeasuringData, MeasuringStands
 
 
-engine = create_engine(os.environ.get('DATABASE_URL'), echo=True)
+engine = create_engine(os.environ.get("DATABASE_URL"), echo=True)
 
 Session = sessionmaker(bind=engine)
 session = Session()

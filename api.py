@@ -26,5 +26,3 @@ def make_shell_context():
         MeasuringData=MeasuringData,
         IndexQuality=IndexQuality,
     )
-
-
