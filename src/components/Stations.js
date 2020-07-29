@@ -12,7 +12,7 @@ class Stations extends Component{
     <div className="additional-info">
       <h1>
       <h1>Tips:</h1>
-      <q>Enter a name of citty or district in search field to focous map on this area</q>
+      <q>Enter a name of city or district in search field to focus map on this area</q>
       <q>Click on leaf marker on map to see graphs</q>
       </h1>
     </div>
